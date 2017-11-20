@@ -7,3 +7,6 @@ class hieratest::do {
 
   notify { "${myhieralookup} <-- hostname": }
   notify { "${myvalue} <--- value pulled from hiera eyaml based on hostname": }
+
+}
+
