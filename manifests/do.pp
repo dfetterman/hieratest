@@ -2,7 +2,8 @@
 # goes here
 class hieratest::do {
 
-  $myhieralookup = "thing::${::hostname}"
+  $myhieralookup = "thing::ip-10-128-105-230"
+#  $myhieralookup = "thing::${::hostname}"
   $myvalue = hiera($myhieralookup, FAILED)
 
   notify { "${myhieralookup} <-- hostname": }
